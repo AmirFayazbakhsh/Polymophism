@@ -4,11 +4,11 @@
 <head>
 	<title>LOGIN USER</title>
     <?php include_once "inc/header.php";?>
-  <?php include_once "app/Users.class.php";?>
+  <?php require "app/Users.class.php";?>
 </head>
 
 <?php
-$users = new Users;
+$users = new App\Controller\Users;
 if (isset($_POST["btn-login"])) {$users->loginUser($_POST);}
 if (isset($_SESSION['userLogin']) && $_SESSION['userLogin'] == true) {
 	header("location:products.php");

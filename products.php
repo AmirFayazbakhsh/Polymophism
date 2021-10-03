@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<title>Products</title>
 	<?php include_once "inc/header.php";?>
+	<?php use App\Controller\Products;?>
 </head>
 <body>
 <?php

@@ -1,4 +1,5 @@
 <?php
+
 interface paymentInterface {
 
 	public function payNow();

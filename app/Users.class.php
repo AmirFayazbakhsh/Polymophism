@@ -1,8 +1,12 @@
 <?php
+namespace App\Controller;
+//////////////
 session_start();
 
 $filePath = realpath(dirname(__FILE__));
 include_once $filePath . "/../database/db.php";
+use App\Database\Dbh;
+use pdo;
 
 class Users {
 

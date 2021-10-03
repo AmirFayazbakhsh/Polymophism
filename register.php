@@ -2,7 +2,8 @@
 <html>
 <head>
   <?php include_once "inc/header.php";?>
-	<?php include_once "app/Users.class.php";?>
+  <?php include_once "inc/autoload.php";?>
+  <?php use App\Controller\Users;?>
 	<title>register USER</title>
 </head>
 

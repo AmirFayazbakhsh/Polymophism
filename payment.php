@@ -11,8 +11,14 @@ include_once "inc/navbar.php";
 include_once "app/buyProduct.class.php";
 include_once "app/paymentInterface.php";
 include_once "app/Products.class.php";
+// include_once "inc/autoload.php";
+
+use App\Controller\Products;
 
 $products = new Products;
+if (!isset($_GET["proId"])) {
+	header("location:products.php");
+}
 $products = $products->getProductById($_GET["proId"]);
 
 if (isset($_POST['payBtn'])) {

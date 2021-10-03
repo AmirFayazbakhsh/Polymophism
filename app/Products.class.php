@@ -1,6 +1,9 @@
 <?php
+namespace App\Controller;
 $filePath = realpath(dirname(__FILE__));
 include_once $filePath . "/../database/db.php";
+
+use App\Database\Dbh;
 
 class Products {
 

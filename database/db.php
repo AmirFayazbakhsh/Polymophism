@@ -1,7 +1,9 @@
 <?php
+namespace App\Database;
 include_once "config.php";
-class Dbh {
+use pdo;
 
+class Dbh {
 	private $username = DB_USER;
 	private $password = DB_PASS;
 
